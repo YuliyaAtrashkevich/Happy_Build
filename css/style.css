@@ -206,6 +206,79 @@ font-family: 'Oswald', sans-serif; */
     color: var(--gray-color);
 }
 
+.feedback {
+    min-height: 181px;
+    background-color: var(--accent-color);
+    margin-bottom: 150px;
+}
+
+.feedback__container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.feedback__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback__h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    text-transform: uppercase;
+
+}
+
+.feedback__h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    text-transform: uppercase;
+    padding-top: 6px;
+}
+
+.feedback__request {
+    border: none;
+    width: 175px;
+    height: 49px;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.feedback__request:hover {
+    border: none;
+    box-shadow: 2px 3px 10px #404149;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.feedback__request:active {
+    border-style: none;
+    background-color: #f18c7a;
+    transition: background-color 0.3s ease-out;
+  }
+
+.feedback__icon {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
 
 @media (min-width: 769px) and (max-width: 1280px) {
     .about__info {
@@ -224,6 +297,10 @@ font-family: 'Oswald', sans-serif; */
 @media (min-width: 769px) and (max-width: 1112px) {
     .header__container {
         padding: 0 15px;
+    }
+    .feedback__container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -262,5 +339,18 @@ font-family: 'Oswald', sans-serif; */
 
     .about__projects-item:last-child {
         margin-bottom: 0;
+    }
+
+    .feedback__container {
+        padding: 30px 15px;
+    }
+
+    .feedback__flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feedback__request {
+        margin-top: 30px;
     }
 }

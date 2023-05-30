@@ -279,6 +279,54 @@ font-family: 'Oswald', sans-serif; */
     margin-right: 15px;
 }
 
+.sevices {
+    margin-bottom: 150px;
+}
+.services__container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.services__h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.services__grid-item {
+    background-color: #F7F7F7;
+    padding: 59px 92px 59px 86px;
+}
+
+.services__img{
+    margin: 0 auto 16px;
+}
+
+.services__h4 {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+    text-transform: uppercase;
+    max-width: 172px;
+}
+
 
 @media (min-width: 769px) and (max-width: 1280px) {
     .about__info {
@@ -302,13 +350,31 @@ font-family: 'Oswald', sans-serif; */
         padding-left: 15px;
         padding-right: 15px;
     }
+    .services__grid {
+        padding-left: 15px;
+        padding-right: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .services__grid-item {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
     .header__container {
         padding: 0 15px;
     }
+
+    .header__title {
+        font-size: 50px;
+    }
     
+    .header__title, .header__subtitle {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .about {
         padding-left: 15px;
         padding-right: 15px;
@@ -325,6 +391,7 @@ font-family: 'Oswald', sans-serif; */
 
     .about__projects {
         padding: 0px 15px 80px 15px;
+        margin-top: -60px;
     }
 
     .about__projects-flex {
@@ -341,6 +408,10 @@ font-family: 'Oswald', sans-serif; */
         margin-bottom: 0;
     }
 
+    .feedback {
+        margin-bottom: 80px;
+    }
+
     .feedback__container {
         padding: 30px 15px;
     }
@@ -352,5 +423,24 @@ font-family: 'Oswald', sans-serif; */
 
     .feedback__request {
         margin-top: 30px;
+    }
+
+    .sevices {
+        margin-bottom: 80px;
+    }
+    .services__h2 {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 50px;
+    }
+
+    .services__grid {
+        padding-left: 15px;
+        padding-right: 15px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services__grid-item {
+        width: 100%;
     }
 }

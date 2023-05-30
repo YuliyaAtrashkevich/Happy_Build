@@ -1,8 +1,8 @@
-#Happy Build
+# Happy Build
 
 Лендинг строительной кампании (Landing page for building company)
 
-##Стек технологий:
+## Стек технологий:
 - HTML5
 - CSS3
 - Flexbox и Grid

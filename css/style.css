@@ -116,10 +116,10 @@ font-family: 'Oswald', sans-serif; */
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     justify-items: center;
+    justify-content: center
 }
 
 .about__grid-item {
-    text-align: center;
     width: 190px;
 }
 
@@ -129,6 +129,7 @@ font-family: 'Oswald', sans-serif; */
     font-size: 72px;
     color: var(--accent-color);
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .about__h5 {
@@ -137,6 +138,7 @@ font-family: 'Oswald', sans-serif; */
     font-size: 36px;
     text-transform: uppercase;
     color: #000;
+    text-align: center;
 }
 
 .about__p {
@@ -144,6 +146,7 @@ font-family: 'Oswald', sans-serif; */
     font-weight: 500;
     font-size: 18px;
     color: var(--gray-color);
+    text-align: center;
 }
 
 .about__projects {
@@ -302,17 +305,17 @@ font-family: 'Oswald', sans-serif; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
-    text-align: center;
     gap: 30px;
 }
 
 .services__grid-item {
     background-color: #F7F7F7;
     padding: 59px 92px 59px 86px;
+    text-align: center;
 }
 
 .services__img{
-    margin: 0 auto 16px;
+    margin-bottom: 16px;
 }
 
 .services__h4 {
@@ -325,8 +328,26 @@ font-family: 'Oswald', sans-serif; */
     color: #000000;
     text-transform: uppercase;
     max-width: 172px;
+    display: block;
+    margin: 0 auto;
 }
 
+.portfolio {
+    margin: 0 auto 150px;
+}
+
+.portfolio_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 0;
+}
+
+.portfolio__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
 @media (min-width: 769px) and (max-width: 1280px) {
     .about__info {
@@ -339,6 +360,11 @@ font-family: 'Oswald', sans-serif; */
     }
     .about__projects {
         padding: 450px 15px 110px 15px;
+    }
+
+    .portfolio_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
     }
 }
 
@@ -360,7 +386,17 @@ font-family: 'Oswald', sans-serif; */
     .services__grid-item {
         width: 100%;
     }
+
+    .portfolio {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .portfolio__img {
+        width: 100%;
+    }
 }
+
 
 @media (max-width: 768px) {
     .header__container {
@@ -369,6 +405,7 @@ font-family: 'Oswald', sans-serif; */
 
     .header__title {
         font-size: 50px;
+        line-height: 1.3;
     }
     
     .header__title, .header__subtitle {
@@ -391,7 +428,7 @@ font-family: 'Oswald', sans-serif; */
 
     .about__projects {
         padding: 0px 15px 80px 15px;
-        margin-top: -60px;
+        margin-top: -50px;
     }
 
     .about__projects-flex {
@@ -412,6 +449,14 @@ font-family: 'Oswald', sans-serif; */
         margin-bottom: 80px;
     }
 
+    .feedback__h2 {
+        font-size: 40px;
+    }
+
+    .feedback__h3 {
+        font-size: 20px;
+    }
+
     .feedback__container {
         padding: 30px 15px;
     }
@@ -428,6 +473,7 @@ font-family: 'Oswald', sans-serif; */
     .sevices {
         margin-bottom: 80px;
     }
+    
     .services__h2 {
         padding-left: 15px;
         padding-right: 15px;
@@ -442,5 +488,8 @@ font-family: 'Oswald', sans-serif; */
 
     .services__grid-item {
         width: 100%;
+    }
+    .portfolio_grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

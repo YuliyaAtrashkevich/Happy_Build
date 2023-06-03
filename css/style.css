@@ -350,7 +350,7 @@ font-family: 'Oswald', sans-serif; */
 }
 
 .question {
-    margin-bottom: 150px;
+    margin-bottom: 140px;
 }
 
 .question__container {
@@ -428,6 +428,45 @@ font-family: 'Oswald', sans-serif; */
     display: none;
 }
 
+.partners {
+    min-height: 364px;
+    background-color: var(--dark-color);
+    margin-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.partners__container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.partners__h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.47;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.partners__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.partners__flex-item {
+    max-width: 170px;
+    margin-right: 40px;
+}
+
+.partners__flex-item:nth-child(5n) {
+    margin-right: 0;
+}
+
 
 @media (min-width: 769px) and (max-width: 1280px) {
     .about__info {
@@ -449,6 +488,10 @@ font-family: 'Oswald', sans-serif; */
     .question {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .partners {
+        padding: 100px 15px;
     }
 }
 
@@ -479,8 +522,26 @@ font-family: 'Oswald', sans-serif; */
     .portfolio__img {
         width: 100%;
     }
-}
 
+    .partners {
+        padding: 100px 15px;
+    }
+
+    .partners__flex {
+        justify-content: center;
+    }
+    .partners__flex-item {
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .partners__flex-item:nth-child(5n) {
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
 
 @media (max-width: 768px) {
     .header__container {
@@ -577,7 +638,7 @@ font-family: 'Oswald', sans-serif; */
     .portfolio {
         margin-bottom: 80px;
     }
-    
+
     .portfolio_grid {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -585,5 +646,26 @@ font-family: 'Oswald', sans-serif; */
         margin-bottom: 80px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .partners {
+        padding: 100px 15px;
+        margin-bottom: 80px;
+    }
+
+    .partners__flex {
+        justify-content: center;
+    }
+
+    .partners__flex-item {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .partners__flex-item:nth-child(5n) {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
     }
 }

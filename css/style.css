@@ -467,6 +467,70 @@ font-family: 'Oswald', sans-serif; */
     margin-right: 0;
 }
 
+.reviews {
+    margin-bottom: 150px;
+}
+.reviews__container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.reviews__h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.47;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reviews__flex {
+    display: flex;
+}
+
+.reviews__flex-item {
+    margin-right: 30px;
+    max-width: 350px;
+}
+
+.reviews__flex-item:last-child {
+    margin-right: 0;
+}
+
+.reviews_gray-block {
+    margin-bottom: 30px;
+    background-color: #F7F7F7;
+    padding: 35px 30px 36px;
+}
+
+.reviews__marks {
+    margin-bottom: 18px;
+}
+
+.reviews__quotation {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.45;  
+    color: var(--gray-color);
+}
+
+.reviews__author {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.48;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.reviews__author.accent {
+    color: var(--accent-color);
+}
+
+
 
 @media (min-width: 769px) and (max-width: 1280px) {
     .about__info {
@@ -540,6 +604,10 @@ font-family: 'Oswald', sans-serif; */
         margin-right: 20px;
         margin-left: 20px;
         margin-bottom: 20px;
+    }
+    .reviews__container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -667,5 +735,26 @@ font-family: 'Oswald', sans-serif; */
         margin-right: 10px;
         margin-left: 10px;
         margin-bottom: 20px;
+    }
+    .reviews {
+        margin-bottom: 80px;
+    }
+    .reviews__container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .reviews__container {
+        max-width: 600px;
+    }
+
+    .reviews__flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .reviews__flex-item {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
     }
 }

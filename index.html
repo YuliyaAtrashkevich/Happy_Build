@@ -9,20 +9,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize.css
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" /> -->
     <link rel="stylesheet" href="css/style.css">
     <title>Строительная кампания Happy Build</title>
 </head>
 
 <body>
-    <header class="header">
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#Главная"><i class="material-icons">home</i>Главная</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#Крупные проекты"><i class="material-icons">account_balance</i>Крупные проекты</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#Услуги"><i class="material-icons">location_city</i>Услуги</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#Портфолио"><i class="material-icons">collections</i>Портфолио</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#Частые вопросы"><i class="material-icons">chat</i>Частые вопросы</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#Наши партнеры"><i class="material-icons">group</i>Наши партнеры</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#Отзывы"><i class="material-icons">grade</i>Отзывы</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#Контакты"><i class="material-icons">call</i>Контакты</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Закрыть</a></li>
+      </ul>
+
+    <header id="Главная" class="header">
         <div class="header__container">
             <div class="header__menu">
                 <img class="header__logo" src="img/logo.svg" alt="Happy Build">
-                <button class="header__burger">
+                <a data-target="slide-out" class="header__burger sidenav-trigger">
                     <span class="header__burger_line"></span>
                     <span class="header__burger_line"></span>
                     <span class="header__burger_line"></span>
-                </button>
+                </a>
             </div>
         </div>
         <h1 class="header__title">Реализуем крупнейшие проекты в России</h1>
@@ -56,7 +80,7 @@
             </div>
         </div>
         <div class="about__projects">
-            <h2 class="about__h2">Наши самые большие проекты</h2>
+            <h2 id="Крупные проекты" class="about__h2">Наши самые большие проекты</h2>
             <div class="about__projects-flex">
                 <div class="about__projects-item">
                     <img src="img/project_01.jpg" alt="Наши проекты" class="about__project-img">
@@ -93,7 +117,7 @@
         </div>
     </section>
 
-    <section class="sevices">
+    <section id="Услуги" class="sevices">
         <div class="services__container">
             <h2 class="services__h2">Чем мы занимаемся?</h2>
             <div class="services__grid">
@@ -125,11 +149,11 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section id="Портфолио" class="portfolio">
         <div class="portfolio_grid">
             <div class="portfolio__grid-item">
                 <img src="img/portfolio_01.jpg" alt="Наше портфолио" class="portfolio__img">
-            </div>    
+            </div>
             <div class="portfolio__grid-item">
                 <img src="img/portfolio_01.jpg" alt="Наше портфолио" class="portfolio__img">
             </div>
@@ -154,31 +178,43 @@
         </div>
     </section>
 
-    <section class="question">
+    <section id="Частые вопросы" class="question">
         <div class="question__container">
             <h2 class="question__title">Ответы на вопросы</h2>
             <div class="question__items">
                 <details class="question__item">
                     <summary class="question__item-h3">Работате ли вы по 249 ФЗ?</summary>
-                    <p class="question__item-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
+                    <p class="question__item-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
+                        Lorem Ipsum для распечатки образцов. </p>
                 </details>
                 <details class="question__item">
                     <summary class="question__item-h3">Работате ли вы по 249 ФЗ?</summary>
-                    <p class="question__item-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
+                    <p class="question__item-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
+                        Lorem Ipsum для распечатки образцов. </p>
                 </details>
                 <details class="question__item">
                     <summary class="question__item-h3">Работате ли вы по 249 ФЗ?</summary>
-                    <p class="question__item-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
+                    <p class="question__item-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
+                        Lorem Ipsum для распечатки образцов. </p>
                 </details>
                 <details class="question__item">
                     <summary class="question__item-h3">Работате ли вы по 249 ФЗ?</summary>
-                    <p class="question__item-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
+                    <p class="question__item-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
+                        Lorem Ipsum для распечатки образцов. </p>
                 </details>
             </div>
         </div>
     </section>
 
-    <section class="partners">
+    <section id="Наши партнеры" class="partners">
         <div class="partners__container">
             <h2 class="partners__h2">Наши партнеры</h2>
             <div class="partners__flex">
@@ -191,30 +227,42 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section id="Отзывы" class="reviews">
         <div class="reviews__container">
             <h2 class="reviews__h2">Отзывы о работе с нами</h2>
             <div class="reviews__flex">
                 <div class="reviews__flex-item">
                     <div class="reviews_gray-block">
                         <img class="reviews__marks" alt="Отзывы о нас" src="img/quot_marks.png">
-                        <p class="reviews__quotation">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.</p>
+                        <p class="reviews__quotation">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
+                            века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                        </p>
                     </div>
-                    <h3 class="reviews__author">Иванов Иван, <span class="reviews__author accent">ООО “Газпром-Арена”</span></h3>
+                    <h3 class="reviews__author">Иванов Иван, <span
+                            class="reviews__author accent">ООО “Газпром-Арена”</span></h3>
                 </div>
                 <div class="reviews__flex-item">
                     <div class="reviews_gray-block">
                         <img class="reviews__marks" alt="Отзывы о нас" src="img/quot_marks.png">
-                        <p class="reviews__quotation">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.</p>
+                        <p class="reviews__quotation">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
+                            века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                        </p>
                     </div>
-                    <h3 class="reviews__author">Иванов Иван, <span class="reviews__author accent">ООО “Газпром-Арена”</span></h3>
+                    <h3 class="reviews__author">Иванов Иван, <span
+                            class="reviews__author accent">ООО “Газпром-Арена”</span></h3>
                 </div>
                 <div class="reviews__flex-item">
                     <div class="reviews_gray-block">
                         <img class="reviews__marks" alt="Отзывы о нас" src="img/quot_marks.png">
-                        <p class="reviews__quotation">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.</p>
+                        <p class="reviews__quotation">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
+                            века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                        </p>
                     </div>
-                    <h3 class="reviews__author">Иванов Иван, <span class="reviews__author accent">ООО “Газпром-Арена”</span></h3>
+                    <h3 class="reviews__author">Иванов Иван, <span
+                            class="reviews__author accent">ООО “Газпром-Арена”</span></h3>
                 </div>
             </div>
         </div>
@@ -233,7 +281,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="Контакты" class="contacts">
         <div class="contacts__container">
             <h2 class="contacts__h2">Контакты</h2>
             <div class="contacts__grid">
@@ -245,7 +293,8 @@
                 <div class="contacts__grid-item">
                     <img src="img/contacts_phone.svg" alt="Наши телефоны" class="contacts__icon">
                     <h3 class="contacts__h3">Телефоны:</h3>
-                    <p class="contacts__p"><a href="tel:+78121112233" class="contacts__a">8 (812) 111-22-33</a><br><a href="tel:+78121112233" class="contacts__a">8 (812) 111-22-33</a></p>
+                    <p class="contacts__p"><a href="tel:+78121112233" class="contacts__a">8 (812) 111-22-33</a><br><a
+                            href="tel:+78121112233" class="contacts__a">8 (812) 111-22-33</a></p>
                 </div>
                 <div class="contacts__grid-item">
                     <img src="img/contacts_clock.svg" alt="Время работы" class="contacts__icon">
@@ -255,7 +304,8 @@
                 <div class="contacts__grid-item">
                     <img src="img/contacts_mail.svg" alt="E-mail" class="contacts__icon">
                     <h3 class="contacts__h3">E-mail:</h3>
-                    <p class="contacts__p accent"><a href="mailto:info@vip.ru" class="contacts__a accent">info@vip.ru</a></p>
+                    <p class="contacts__p accent"><a href="mailto:info@vip.ru"
+                            class="contacts__a accent">info@vip.ru</a></p>
                 </div>
             </div>
         </div>
@@ -269,5 +319,10 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
 
 </html>

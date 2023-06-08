@@ -11,8 +11,8 @@
         rel="stylesheet">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Import materialize.css
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" /> -->
+    <!-- Import materialize.css -->
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" /> -->
     <link rel="stylesheet" href="css/style.css">
     <title>Строительная кампания Happy Build</title>
 </head>
@@ -20,23 +20,32 @@
 <body>
     <ul id="slide-out" class="sidenav">
         <li><a href="#Главная"><i class="material-icons">home</i>Главная</a></li>
-        <li><div class="divider"></div></li>
+        <li>
+        </li>
         <li><a href="#Крупные проекты"><i class="material-icons">account_balance</i>Крупные проекты</a></li>
-        <li><div class="divider"></div></li>
+        <li>
+        </li>
         <li><a href="#Услуги"><i class="material-icons">location_city</i>Услуги</a></li>
-        <li><div class="divider"></div></li>
+        <li>
+        </li>
         <li><a href="#Портфолио"><i class="material-icons">collections</i>Портфолио</a></li>
-        <li><div class="divider"></div></li>
+        <li>
+        </li>
         <li><a href="#Частые вопросы"><i class="material-icons">chat</i>Частые вопросы</a></li>
-        <li><div class="divider"></div></li>
+        <li>
+        </li>
         <li><a href="#Наши партнеры"><i class="material-icons">group</i>Наши партнеры</a></li>
-        <li><div class="divider"></div></li>
+        <li>
+        </li>
         <li><a href="#Отзывы"><i class="material-icons">grade</i>Отзывы</a></li>
-        <li><div class="divider"></div></li>
+        <li>
+        </li>
         <li><a href="#Контакты"><i class="material-icons">call</i>Контакты</a></li>
-        <li><div class="divider"></div></li>
+        <li>
+            <div class="divider"></div>
+        </li>
         <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Закрыть</a></li>
-      </ul>
+    </ul>
 
     <header id="Главная" class="header">
         <div class="header__container">
@@ -111,11 +120,43 @@
                     <h2 class="feedback__h2">Самые умные проекты</h2>
                     <h3 class="feedback__h3">Реализуем самые смелые решения в России!</h3>
                 </div>
-                <button class="feedback__request" type="submit"><img src="img/email_icon.svg" alt="email"
-                        class="feedback__icon">Ваш запрос</button>
+                <a href="#modal1" class="feedback__request modal-trigger">
+                    <img src="img/email_icon.svg" alt="email" class="feedback__icon">Ваш запрос</a>
             </div>
         </div>
     </section>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal__close-icon"><a class="modal-close" href="#!"><i class="material-icons">close</i></a></div>
+        <div class="modal-content">
+            <h4 class="modal__h4">Оставьте заявку</h4>
+            <h5 class="modal__h5">Мы поможем подобрать идеальный проект и рассчитать оптимальный бюджет</h5>
+            <form action="" class="modal__form">
+                <div class="modal__form-item">
+                    <label for="" class="modal__form-label">Как мы можем к вам обращаться?</label>
+                    <input type="text" class="modal__form-text" placeholder="Ваше имя" required>
+                </div>
+                <div class="modal__form-item">
+                    <label for="" class="modal__form-label">Какой проект вас интересует?</label>
+                    <select class="modal__form-text" name="" id="">
+                        <option class="modal__form-option" value="" selected disabled>Выберите тип объекта</option>
+                        <option class="modal__form-option" value="Спортивный объект">Спортивный объект</option>
+                        <option class="modal__form-option" value="Торгово-офисный комплекс">Торгово-офисный комплекс</option>
+                        <option class="modal__form-option" value="Промышленный объект">Промышленный объект</option>
+                        <option class="modal__form-option" value="Жилое здание">Жилое здание</option>
+                    </select>
+                </div>
+                <div class="modal__form-item">
+                    <label for="" class="modal__form-label">Ваш номер телефона</label>
+                    <input type="tel" class="modal__form-text" placeholder="+71112223344" required>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="feedback__request feedback__request-modal modal-close btn-flat"><img src="img/email_icon_white.svg" alt="email" class="feedback__icon">Отправить</a>
+        </div>
+    </div>
 
     <section id="Услуги" class="sevices">
         <div class="services__container">
@@ -275,8 +316,8 @@
                     <h2 class="feedback__h2">Хотите с нами работать?</h2>
                     <h3 class="feedback__h3">Оставьте заявку и мы свяжемся с вами!</h3>
                 </div>
-                <button class="feedback__request" type="submit"><img src="img/email_icon.svg" alt="email"
-                        class="feedback__icon">Ваш запрос</button>
+                <a href="#modal1" class="feedback__request modal-trigger">
+                    <img src="img/email_icon.svg" alt="email" class="feedback__icon">Ваш запрос</a>
             </div>
         </div>
     </section>

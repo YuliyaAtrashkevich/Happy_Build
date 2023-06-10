@@ -270,13 +270,15 @@
     text-decoration: none;
 }
 
-.feedback__request:hover, .feedback__request-modal:hover {
+.feedback__request:hover,
+.feedback__request-modal:hover {
     border: none;
     box-shadow: 2px 3px 10px #404149;
     transition: box-shadow 0.3s ease-out;
 }
 
-.feedback__request:active, .feedback__request-modal:active {
+.feedback__request:active,
+.feedback__request-modal:active {
     border-style: none;
     background-color: #f18c7a;
     transition: background-color 0.3s ease-out;
@@ -854,6 +856,7 @@ ul:not(.browser-default)>li {
     gap: 30px;
     margin-bottom: 30px;
 }
+
 .modal__form-item {
     display: flex;
     flex-direction: column;
@@ -900,6 +903,32 @@ ul:not(.browser-default)>li {
     position: absolute;
     top: 15px;
     right: 15px;
+}
+
+/* Галерея */
+
+.materialboxed {
+    display: block;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    position: relative;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
+    -webkit-backface-visibility: hidden;
+}
+
+.materialboxed:hover:not(.active) {
+    opacity: .8;
+}
+
+.materialboxed.active {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+}
+
+.carousel.scrolling .carousel-item .materialboxed,
+.carousel .carousel-item:not(.active) .materialboxed {
+    pointer-events: none;
 }
 
 
@@ -1222,7 +1251,7 @@ ul:not(.browser-default)>li {
         font-size: 28px;
         color: #000;
     }
-    
+
     .modal__h5 {
         font-size: 14px;
     }
@@ -1232,4 +1261,3 @@ ul:not(.browser-default)>li {
         line-height: 1.1;
     }
 }
-
